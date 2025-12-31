@@ -1,0 +1,4 @@
+
+> fitpilot-nutrition-backend@0.0.1 test:e2e
+> env-cmd -f .env.test jest --config ./test/jest-e2e.json --runInBand appointments availability-slots biometric-logs daily-targets data-sources exchange-groups exchange-systems food-categories food-logs
+

@@ -1,0 +1,28 @@
+
+> fitpilot-nutrition-backend@0.0.1 test:e2e C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend
+> env-cmd -f .env.test jest --config ./test/jest-e2e.json --runInBand "test/daily-targets.e2e-spec.ts"
+
+FAIL test/daily-targets.e2e-spec.ts
+  DailyTargetsController (e2e)
+    ├ù /daily-targets (GET) (261 ms)
+
+  ÔùÅ DailyTargetsController (e2e) ÔÇ║ /daily-targets (GET)
+
+    TypeError: request is not a function
+
+      21 |
+      22 |   it('/daily-targets (GET)', () => {
+    > 23 |     return request(app.getHttpServer())
+         |            ^
+      24 |       .get('/daily-targets')
+      25 |       .expect(200);
+      26 |   });
+
+      at Object.<anonymous> (test/daily-targets.e2e-spec.ts:23:12)
+
+Test Suites: 1 failed, 1 total
+Tests:       1 failed, 1 total
+Snapshots:   0 total
+Time:        2.094 s
+Ran all test suites matching /test\\daily-targets.e2e-spec.ts/i.
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

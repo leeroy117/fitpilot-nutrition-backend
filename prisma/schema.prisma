@@ -1,6 +1,7 @@
 generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
+  provider        = "prisma-client"
+  output          = "../generated/prisma"
+  previewFeatures = ["multiSchema"]
 }
 
 datasource db {
@@ -8,46 +9,16 @@ datasource db {
   schemas  = ["nutrition", "public"]
 }
 
-model allergens {
-  id               Int                @id @default(autoincrement())
-  name             String             @db.VarChar(50)
-  client_allergens client_allergens[]
-  food_allergens   food_allergens[]
-
-  @@schema("nutrition")
-}
-
-model biometric_logs {
+model daily_targets {
   id               Int       @id @default(autoincrement())
   user_id          Int?
-  logged_at        DateTime? @default(dbgenerated("CURRENT_DATE")) @db.Date
-  weight_kg        Decimal?  @db.Decimal(5, 2)
-  body_fat_percent Decimal?  @db.Decimal(4, 2)
-  users            users?    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-
-  @@schema("nutrition")
-}
-
-model client_allergens {
-  user_id     Int
-  allergen_id Int
-  allergens   allergens @relation(fields: [allergen_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  users       users     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-
-  @@id([user_id, allergen_id])
-  @@schema("nutrition")
-}
-
-model daily_targets {
-  id                 Int       @id @default(autoincrement())
-  user_id            Int?
-  start_date         DateTime? @default(dbgenerated("CURRENT_DATE")) @db.Date
-  end_date           DateTime? @db.Date
-  target_energy_kcal Int?
-  target_protein_g   Int?
-  target_carbs_g     Int?
-  target_fat_g       Int?
-  users              users?    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  start_date       DateTime? @default(dbgenerated("CURRENT_DATE")) @db.Date
+  end_date         DateTime? @db.Date
+  target_calories  Int?
+  target_protein_g Int?
+  target_carbs_g   Int?
+  target_fat_g     Int?
+  is_active        Boolean?  @default(true)
 
   @@schema("nutrition")
 }
@@ -64,7 +35,7 @@ model exchange_groups {
   id               Int               @id @default(autoincrement())
   system_id        Int?
   name             String            @db.VarChar(100)
-  avg_energy_kcal  Int?
+  avg_calories     Int?
   color_code       String?           @db.VarChar(7)
   exchange_systems exchange_systems? @relation(fields: [system_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   foods            foods[]
@@ -75,18 +46,9 @@ model exchange_groups {
 model exchange_systems {
   id              Int               @id @default(autoincrement())
   name            String            @db.VarChar(100)
+  country_code    String?           @db.VarChar(3)
   exchange_groups exchange_groups[]
 
-  @@schema("nutrition")
-}
-
-model food_allergens {
-  food_id     Int
-  allergen_id Int
-  allergens   allergens @relation(fields: [allergen_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  foods       foods     @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-
-  @@id([food_id, allergen_id])
   @@schema("nutrition")
 }
 
@@ -100,168 +62,59 @@ model food_categories {
 }
 
 model food_logs {
-  id              Int            @id @default(autoincrement())
+  id              BigInt         @id @default(autoincrement())
   user_id         Int?
   food_id         Int?
-  logged_at       DateTime?      @default(now()) @db.Timestamp(6)
+  date            DateTime?      @default(dbgenerated("CURRENT_DATE")) @db.Date
   meal_type       String?        @db.VarChar(20)
   quantity        Decimal?       @db.Decimal(10, 2)
   serving_unit_id Int?
+  logged_at       DateTime?      @default(now()) @db.Timestamp(6)
   foods           foods?         @relation(fields: [food_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   serving_units   serving_units? @relation(fields: [serving_unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  users           users?         @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
-  @@schema("nutrition")
-}
-
-model food_nutrients {
-  id          Int        @id @default(autoincrement())
-  food_id     Int?
-  nutrient_id Int?
-  amount      Decimal    @db.Decimal(10, 4)
-  foods       foods?     @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  nutrients   nutrients? @relation(fields: [nutrient_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-
+  @@index([user_id, date], map: "idx_food_logs_user_date")
   @@schema("nutrition")
 }
 
 model foods {
-  id                                                              Int                  @id @default(autoincrement())
-  name                                                            String               @db.VarChar(255)
-  brand                                                           String?              @db.VarChar(100)
-  barcode                                                         String?              @db.VarChar(50)
-  category_id                                                     Int?
-  data_source_id                                                  Int?
-  exchange_group_id                                               Int?
-  is_recipe                                                       Boolean?             @default(false)
-  glycemic_index                                                  Int?
-  glycemic_load_per_100g                                          Decimal?             @db.Decimal(10, 2)
-  base_serving_size                                               Decimal?             @default(100) @db.Decimal(10, 2)
-  base_unit                                                       String?              @default("g") @db.VarChar(20)
-  food_allergens                                                  food_allergens[]
-  food_logs                                                       food_logs[]
-  food_nutrients                                                  food_nutrients[]
-  food_categories                                                 food_categories?     @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  data_sources                                                    data_sources?        @relation(fields: [data_source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  exchange_groups                                                 exchange_groups?     @relation(fields: [exchange_group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  meal_plan_items                                                 meal_plan_items[]
-  recipe_ingredients_recipe_ingredients_ingredient_food_idTofoods recipe_ingredients[] @relation("recipe_ingredients_ingredient_food_idTofoods")
-  recipe_ingredients_recipe_ingredients_recipe_food_idTofoods     recipe_ingredients[] @relation("recipe_ingredients_recipe_food_idTofoods")
-  recipes                                                         recipes?
-  serving_units                                                   serving_units[]
-
-  @@schema("nutrition")
-}
-
-model meal_plan_items {
-  id              Int            @id @default(autoincrement())
-  meal_plan_id    Int?
-  food_id         Int?
-  day_of_week     Int?
-  meal_type       String?        @db.VarChar(20)
-  quantity        Decimal?       @db.Decimal(10, 2)
-  serving_unit_id Int?
-  foods           foods?         @relation(fields: [food_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  meal_plans      meal_plans?    @relation(fields: [meal_plan_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  serving_units   serving_units? @relation(fields: [serving_unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-
-  @@schema("nutrition")
-}
-
-model meal_plans {
-  id                                         Int               @id @default(autoincrement())
-  professional_id                            Int?
-  assigned_client_id                         Int?
-  name                                       String?           @db.VarChar(100)
-  is_active                                  Boolean?          @default(true)
-  created_at                                 DateTime?         @default(now()) @db.Timestamp(6)
-  meal_plan_items                            meal_plan_items[]
-  users_meal_plans_assigned_client_idTousers users?            @relation("meal_plans_assigned_client_idTousers", fields: [assigned_client_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  users_meal_plans_professional_idTousers    users?            @relation("meal_plans_professional_idTousers", fields: [professional_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-
-  @@schema("nutrition")
-}
-
-model nutrient_categories {
-  id           Int         @id @default(autoincrement())
-  name         String      @db.VarChar(50)
-  is_essential Boolean?    @default(true)
-  nutrients    nutrients[]
-
-  @@schema("nutrition")
-}
-
-model nutrients {
-  id                      Int                  @id @default(autoincrement())
-  category_id             Int?
-  name                    String               @db.VarChar(100)
-  unit                    String?              @db.VarChar(20)
-  daily_recommended_value Decimal?             @db.Decimal(10, 2)
-  food_nutrients          food_nutrients[]
-  nutrient_categories     nutrient_categories? @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-
-  @@schema("nutrition")
-}
-
-model recipe_ingredients {
-  id                                                 Int            @id @default(autoincrement())
-  recipe_food_id                                     Int?
-  ingredient_food_id                                 Int?
-  quantity                                           Decimal        @db.Decimal(10, 2)
-  serving_unit_id                                    Int?
-  foods_recipe_ingredients_ingredient_food_idTofoods foods?         @relation("recipe_ingredients_ingredient_food_idTofoods", fields: [ingredient_food_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  foods_recipe_ingredients_recipe_food_idTofoods     foods?         @relation("recipe_ingredients_recipe_food_idTofoods", fields: [recipe_food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  serving_units                                      serving_units? @relation(fields: [serving_unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-
-  @@schema("nutrition")
-}
-
-model recipes {
-  food_id            Int            @id
-  created_by_user_id Int?
-  instructions       String?
-  prep_time_minutes  Int?
-  cook_time_minutes  Int?
-  total_yield        Decimal?       @db.Decimal(10, 2)
-  yield_unit_id      Int?
-  users              users?         @relation(fields: [created_by_user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  foods              foods          @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  serving_units      serving_units? @relation(fields: [yield_unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  id                Int              @id @default(autoincrement())
+  name              String           @db.VarChar(255)
+  brand             String?          @db.VarChar(100)
+  category_id       Int?
+  data_source_id    Int?
+  exchange_group_id Int?
+  is_recipe         Boolean?         @default(false)
+  base_serving_size Decimal?         @default(100) @db.Decimal(10, 2)
+  base_unit         String?          @default("g") @db.VarChar(20)
+  calories_kcal     Decimal?         @db.Decimal(10, 2)
+  protein_g         Decimal?         @db.Decimal(10, 2)
+  carbs_g           Decimal?         @db.Decimal(10, 2)
+  fat_g             Decimal?         @db.Decimal(10, 2)
+  food_logs         food_logs[]
+  food_categories   food_categories? @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  data_sources      data_sources?    @relation(fields: [data_source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  exchange_groups   exchange_groups? @relation(fields: [exchange_group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  serving_units     serving_units[]
 
   @@schema("nutrition")
 }
 
 model serving_units {
-  id                 Int                  @id @default(autoincrement())
-  food_id            Int?
-  unit_name          String               @db.VarChar(50)
-  gram_equivalent    Decimal              @db.Decimal(10, 2)
-  is_exchange_unit   Boolean?             @default(false)
-  food_logs          food_logs[]
-  meal_plan_items    meal_plan_items[]
-  recipe_ingredients recipe_ingredients[]
-  recipes            recipes[]
-  foods              foods?               @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  id               Int         @id @default(autoincrement())
+  food_id          Int?
+  unit_name        String      @db.VarChar(50)
+  gram_equivalent  Decimal     @db.Decimal(10, 2)
+  is_exchange_unit Boolean?    @default(false)
+  food_logs        food_logs[]
+  foods            foods?      @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
   @@schema("nutrition")
-}
-
-model client_profiles {
-  user_id           Int       @id
-  date_of_birth     DateTime? @db.Date
-  gender            String?   @db.VarChar(10)
-  height_cm         Int?
-  current_weight_kg Decimal?  @db.Decimal(5, 2)
-  goal              String?   @db.VarChar(50)
-  users             users     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-
-  @@schema("public")
 }
 
 model plans {
   id               Int             @id @default(autoincrement())
   name             String          @db.VarChar(100)
-  description      String?
   price_monthly    Decimal?        @db.Decimal(10, 2)
   access_nutrition Boolean?        @default(false)
   access_training  Boolean?        @default(false)
@@ -272,30 +125,30 @@ model plans {
 }
 
 model professional_clients {
-  id                                                Int       @id @default(autoincrement())
+  id                                                Int               @id @default(autoincrement())
   professional_id                                   Int
   client_id                                         Int
-  service_type                                      String?   @db.VarChar(20)
-  status                                            String?   @default("active") @db.VarChar(20)
-  start_date                                        DateTime? @default(dbgenerated("CURRENT_DATE")) @db.Date
-  notes                                             String?
-  users_professional_clients_client_idTousers       users     @relation("professional_clients_client_idTousers", fields: [client_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  users_professional_clients_professional_idTousers users     @relation("professional_clients_professional_idTousers", fields: [professional_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  service_type                                      service_type_enum
+  start_date                                        DateTime?         @default(dbgenerated("CURRENT_DATE")) @db.Date
+  end_date                                          DateTime?         @db.Date
+  is_active                                         Boolean?          @default(true)
+  users_professional_clients_client_idTousers       users             @relation("professional_clients_client_idTousers", fields: [client_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  users_professional_clients_professional_idTousers users             @relation("professional_clients_professional_idTousers", fields: [professional_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
-  @@unique([professional_id, client_id])
+  @@unique([professional_id, client_id, service_type])
+  @@index([client_id], map: "idx_prof_clients_client")
+  @@index([professional_id], map: "idx_prof_clients_prof")
   @@schema("public")
 }
 
 model professional_profiles {
-  user_id            Int      @id
-  title              String?  @db.VarChar(100)
-  biography          String?
-  specialty          String?  @db.VarChar(100)
-  license_number     String?  @db.VarChar(50)
-  work_address       String?
-  consultation_price Decimal? @db.Decimal(10, 2)
-  social_media_links String?
-  users              users    @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user_id        Int      @id
+  title          String?  @db.VarChar(100)
+  biography      String?
+  specialties    String[]
+  license_number String?  @db.VarChar(50)
+  work_address   String?
+  social_media   Json?
 
   @@schema("public")
 }
@@ -309,32 +162,146 @@ model subscriptions {
   end_date   DateTime  @db.Timestamp(6)
   auto_renew Boolean?  @default(true)
   plans      plans     @relation(fields: [plan_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  users      users     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
   @@schema("public")
 }
 
 model users {
-  id                                                               Int                    @id @default(autoincrement())
-  email                                                            String                 @unique @db.VarChar(255)
-  password_hash                                                    String                 @db.VarChar(255)
-  full_name                                                        String                 @db.VarChar(255)
-  role                                                             String                 @db.VarChar(20)
-  profile_photo_url                                                String?
-  is_active                                                        Boolean?               @default(true)
-  created_at                                                       DateTime?              @default(now()) @db.Timestamp(6)
-  biometric_logs                                                   biometric_logs[]
-  client_allergens                                                 client_allergens[]
-  daily_targets                                                    daily_targets[]
-  food_logs                                                        food_logs[]
-  meal_plans_meal_plans_assigned_client_idTousers                  meal_plans[]           @relation("meal_plans_assigned_client_idTousers")
-  meal_plans_meal_plans_professional_idTousers                     meal_plans[]           @relation("meal_plans_professional_idTousers")
-  recipes                                                          recipes[]
-  client_profiles                                                  client_profiles?
-  professional_clients_professional_clients_client_idTousers       professional_clients[] @relation("professional_clients_client_idTousers")
-  professional_clients_professional_clients_professional_idTousers professional_clients[] @relation("professional_clients_professional_idTousers")
-  professional_profiles                                            professional_profiles?
-  subscriptions                                                    subscriptions[]
+  id                                                               Int                      @id @default(autoincrement())
+  name                                                             String                   @db.VarChar(100)
+  email                                                            String                   @unique @db.VarChar(150)
+  password                                                         String                   @db.VarChar(255)
+  created_at                                                       DateTime?                @default(now()) @db.Timestamptz(6)
+  updated_at                                                       DateTime?                @default(now()) @db.Timestamptz(6)
+  is_active                                                        Boolean?                 @default(true)
+  role                                                             user_role_enum?
+  professional_clients_professional_clients_client_idTousers       professional_clients[]   @relation("professional_clients_client_idTousers")
+  professional_clients_professional_clients_professional_idTousers professional_clients[]   @relation("professional_clients_professional_idTousers")
+  refresh_tokens                                                   refresh_tokens[]
+  user_professional_roles                                          user_professional_roles?
+
+  @@index([email], map: "idx_users_email")
+  @@schema("public")
+}
+
+model appointments {
+  id               Int      @id @default(autoincrement())
+  professional_id  Int
+  client_id        Int
+  scheduled_at     DateTime @db.Timestamp(6)
+  duration_minutes Int?     @default(60)
+  status           String?  @default("scheduled") @db.VarChar(20)
+  title            String?  @db.VarChar(150)
+  meeting_link     String?
+  notes            String?
+
+  @@schema("public")
+}
+
+model availability_slots {
+  id              Int       @id @default(autoincrement())
+  professional_id Int
+  day_of_week     Int?
+  start_time      DateTime? @db.Time(6)
+  end_time        DateTime? @db.Time(6)
+  is_active       Boolean?  @default(true)
+
+  @@schema("public")
+}
+
+model client_metrics {
+  id                  BigInt    @id @default(autoincrement())
+  user_id             Int
+  date                DateTime? @default(dbgenerated("CURRENT_DATE")) @db.Date
+  logged_at           DateTime? @default(now()) @db.Timestamp(6)
+  weight_kg           Decimal?  @db.Decimal(5, 2)
+  height_cm           Decimal?  @db.Decimal(5, 2)
+  body_fat_pct        Decimal?  @db.Decimal(4, 1)
+  muscle_mass_kg      Decimal?  @db.Decimal(5, 2)
+  visceral_fat        Decimal?  @db.Decimal(4, 1)
+  water_pct           Decimal?  @db.Decimal(4, 1)
+  waist_cm            Decimal?  @db.Decimal(5, 1)
+  hip_cm              Decimal?  @db.Decimal(5, 1)
+  chest_cm            Decimal?  @db.Decimal(5, 1)
+  arm_left_cm         Decimal?  @db.Decimal(5, 1)
+  arm_right_cm        Decimal?  @db.Decimal(5, 1)
+  thigh_left_cm       Decimal?  @db.Decimal(5, 1)
+  thigh_right_cm      Decimal?  @db.Decimal(5, 1)
+  calf_left_cm        Decimal?  @db.Decimal(5, 1)
+  calf_right_cm       Decimal?  @db.Decimal(5, 1)
+  notes               String?
+  recorded_by_user_id Int?
+
+  @@index([user_id, date], map: "idx_metrics_user_date")
+  @@schema("public")
+}
+
+model refresh_tokens {
+  id         Int       @id @default(autoincrement())
+  user_id    Int
+  token      String    @unique @db.VarChar(512)
+  expires_at DateTime  @db.Timestamptz(6)
+  is_revoked Boolean?  @default(false)
+  user_agent String?
+  ip_address String?   @db.VarChar(45)
+  created_at DateTime? @default(now()) @db.Timestamptz(6)
+  updated_at DateTime? @default(now()) @db.Timestamptz(6)
+  users      users     @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@index([token], map: "idx_refresh_tokens_token")
+  @@index([user_id], map: "idx_refresh_tokens_user")
+  @@schema("public")
+}
+
+model user_professional_roles {
+  user_id Int                     @id
+  role    professional_role_enum?
+  users   users                   @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@schema("public")
+}
+
+enum service_type_enum {
+  NUTRITION
+  TRAINING
+  BOTH
+
+  @@schema("public")
+}
+
+enum user_role_enum {
+  CLIENT
+  PROFESSIONAL
+  ADMIN
+
+  @@schema("public")
+}
+
+enum difficulty_enum {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+
+  @@schema("public")
+}
+
+enum exercise_type_enum {
+  MULTIARTICULAR
+  MONOARTICULAR
+
+  @@schema("public")
+}
+
+enum professional_role_enum {
+  NUTRITIONIST
+  TRAINER
+
+  @@schema("public")
+}
+
+enum professional_role_enum_old {
+  NUTRICIONIST
+  TRAINER
 
   @@schema("public")
 }

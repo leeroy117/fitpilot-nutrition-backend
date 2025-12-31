@@ -1,0 +1,27 @@
+
+> fitpilot-nutrition-backend@0.0.1 test:e2e C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend
+> env-cmd -f .env.test jest --config ./test/jest-e2e.json
+
+PASS test/debug.e2e-spec.ts
+PASS test/serving-units.e2e-spec.ts (8.459 s)
+PASS test/food-nutrients.e2e-spec.ts (8.683 s)
+PASS test/meal-plans.e2e-spec.ts (8.955 s)
+PASS test/foods.e2e-spec.ts (8.977 s)
+PASS test/app.e2e-spec.ts (7.437 s)
+PASS test/food-logs.e2e-spec.ts (9.544 s)
+PASS test/recipe-ingredients.e2e-spec.ts (9.61 s)
+PASS test/exchange-groups.e2e-spec.ts (9.565 s)
+PASS test/meal-plan-items.e2e-spec.ts (9.707 s)
+PASS test/exchange-systems.e2e-spec.ts (9.632 s)
+PASS test/daily-targets.e2e-spec.ts (9.528 s)
+PASS test/data-sources.e2e-spec.ts (9.576 s)
+PASS test/biometric-logs.e2e-spec.ts (9.615 s)
+PASS test/recipes.e2e-spec.ts (9.656 s)
+PASS test/food-categories.e2e-spec.ts (9.754 s)
+A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+
+Test Suites: 16 passed, 16 total
+Tests:       17 passed, 17 total
+Snapshots:   0 total
+Time:        11.871 s, estimated 23 s
+Ran all test suites.

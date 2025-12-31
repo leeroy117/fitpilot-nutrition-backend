@@ -1,0 +1,1148 @@
+
+> fitpilot-nutrition-backend@0.0.1 start:dev C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend
+> nest start --watch
+
+[32mÔ£ö[0m [33mConsole Ninja[0m extension is connected to [33mNest.js[0m, see [36mhttps://tinyurl.com/2vt8jxzw[0m
+[2J[3J[H[[90m2:04:27 a.m.[0m] Starting compilation in watch mode...
+
+[[90m2:04:32 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +16ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +10ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +3ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 35988  - [39m21/12/2025, 2:04:33 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +39ms[39m
+[Nest] 35988  - 21/12/2025, 2:04:33 a.m.   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3000 +1ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+platform-express@11_94b0a548cf2e638f8069f8bf3d0ef8bf\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:178:16)
+    at async bootstrap (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\main.ts:23:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v24.7.0
+[2J[3J[H[[90m2:23:06 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:23:06 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +31ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +9ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +2ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 40688  - [39m21/12/2025, 2:23:08 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +40ms[39m
+[Nest] 40688  - 21/12/2025, 2:23:08 a.m.   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3000 +3ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+platform-express@11_94b0a548cf2e638f8069f8bf3d0ef8bf\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:178:16)
+    at async bootstrap (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\main.ts:23:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v24.7.0
+[2J[3J[H[[90m2:23:56 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:23:56 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +19ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +15ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +2ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:58 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13116  - [39m21/12/2025, 2:23:59 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +66ms[39m
+[Nest] 13116  - 21/12/2025, 2:23:59 a.m.   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3000 +2ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+platform-express@11_94b0a548cf2e638f8069f8bf3d0ef8bf\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:178:16)
+    at async bootstrap (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\main.ts:23:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v24.7.0
+[2J[3J[H[[90m2:24:05 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:24:05 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +17ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +14ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +4ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37744  - [39m21/12/2025, 2:24:08 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +65ms[39m
+[Nest] 37744  - 21/12/2025, 2:24:08 a.m.   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3000 +3ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+platform-express@11_94b0a548cf2e638f8069f8bf3d0ef8bf\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:178:16)
+    at async bootstrap (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\main.ts:23:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v24.7.0
+[2J[3J[H[[90m2:24:11 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:24:12 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +26ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +2ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +12ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +2ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 14856  - [39m21/12/2025, 2:24:14 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +46ms[39m
+[Nest] 14856  - 21/12/2025, 2:24:14 a.m.   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3000 +3ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+platform-express@11_94b0a548cf2e638f8069f8bf3d0ef8bf\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:178:16)
+    at async bootstrap (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\main.ts:23:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v24.7.0
+[2J[3J[H[[90m2:24:24 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:24:24 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +12ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +8ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +2ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 39208  - [39m21/12/2025, 2:24:27 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +41ms[39m
+[2J[3J[H[[90m2:24:38 a.m.[0m] File change detected. Starting incremental compilation...
+
+[96msrc/auth/auth.controller.ts[0m:[93m21[0m:[93m14[0m - [91merror[0m[90m TS2304: [0mCannot find name 'RefreshTokenGuard'.
+
+[7m21[0m   @UseGuards(RefreshTokenGuard)
+[7m  [0m [91m             ~~~~~~~~~~~~~~~~~[0m
+
+[[90m2:24:38 a.m.[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m2:24:44 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:24:44 a.m.[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPassportModule dependencies initialized[39m[38;5;3m +22ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPrismaModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mJwtModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRefreshTokensModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mClientMetricsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mUsersModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalProfilesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfessionalClientsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlansModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mSubscriptionsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppointmentsModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAvailabilitySlotsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDailyTargetsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mDataSourcesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeGroupsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mExchangeSystemsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodCategoriesModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodLogsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mFoodsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mServingUnitsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAuthModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/} (version: 1):[39m[38;5;3m +9ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAuthController {/auth} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/signup, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/login, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/refresh, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/profile, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/auth/logout, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mUsersController {/users} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/users/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mRefreshTokensController {/refresh-tokens} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/refresh-tokens/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalProfilesController {/professional-profiles} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-profiles/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mProfessionalClientsController {/professional-clients} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/professional-clients/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mPlansController {/plans} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/plans/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mSubscriptionsController {/subscriptions} (version: 1):[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/subscriptions/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mClientMetricsController {/client-metrics} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/client-metrics/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDailyTargetsController {/daily-targets} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, POST} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/daily-targets/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mDataSourcesController {/data-sources} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/data-sources/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeGroupsController {/exchange-groups} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-groups/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mExchangeSystemsController {/exchange-systems} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, PATCH} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/exchange-systems/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodCategoriesController {/food-categories} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-categories/:id, DELETE} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodLogsController {/food-logs} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/food-logs/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mFoodsController {/foods} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/foods/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mServingUnitsController {/serving-units} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/serving-units/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppointmentsController {/appointments} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, GET} (version: 1) route[39m[38;5;3m +1ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/appointments/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAvailabilitySlotsController {/availability-slots} (version: 1):[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, POST} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, GET} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, PATCH} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/availability-slots/:id, DELETE} (version: 1) route[39m[38;5;3m +0ms[39m
+[32m[Nest] 37172  - [39m21/12/2025, 2:24:47 a.m. [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +38ms[39m
+[Nest] 37172  - 21/12/2025, 2:24:47 a.m.   ERROR [NestApplication] Error: listen EADDRINUSE: address already in use :::3000 +3ms
+node:net:1940
+    const ex = new UVExceptionWithHostPort(err, 'listen', address, port);
+               ^
+
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at ExpressAdapter.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+platform-express@11_94b0a548cf2e638f8069f8bf3d0ef8bf\node_modules\@nestjs\platform-express\adapters\express-adapter.js:127:32)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:188:30
+    at new Promise (<anonymous>)
+    at NestApplication.listen (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\nest-application.js:178:16)
+    at async bootstrap (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\main.ts:23:3) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
+
+Node.js v24.7.0
+[2J[3J[H[[90m2:25:03 a.m.[0m] File change detected. Starting incremental compilation...
+
+[[90m2:25:03 a.m.[0m] Found 0 errors. Watching for file changes.
+
+node:internal/modules/cjs/loader:1413
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\dist\main'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1410:15)
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1051:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1056:22)
+    at Module._load (node:internal/modules/cjs/loader:1219:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:238:24)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v24.7.0

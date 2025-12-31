@@ -1,0 +1,233 @@
+
+> fitpilot-nutrition-backend@0.0.1 test:e2e C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend
+> env-cmd -f .env.test jest --config ./test/jest-e2e.json --runInBand
+
+[Nest] 36808  - 21/12/2025, 1:16:02 a.m.   ERROR [ExceptionsHandler] PrismaClientKnownRequestError: 
+Invalid `this.prisma.users.findMany()` invocation in
+C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\users\users.service.ts:17:30
+
+  14 }
+  15 
+  16 findAll() {
+ÔåÆ 17   return this.prisma.users.findMany(
+The column `(not available)` does not exist in the current database.
+    at qr.handleRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at qr.handleAndLogRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+  code: 'P2022',
+  meta: {
+    modelName: 'users',
+    driverAdapterError: DriverAdapterError: ColumnNotFound
+        at PrismaPgAdapter.onError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:693:11)
+        at PrismaPgAdapter.performIO (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:688:12)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+        at PrismaPgAdapter.queryRaw (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:608:30)
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\tracing.ts:68:22
+        at fr (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\tracing.ts:56:10)
+        at e.interpretNode (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:190:26)
+        at e.interpretNode (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:276:41)
+        at e.run (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:96:23)
+        at execute (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\core\engines\client\LocalExecutor.ts:81:12)
+        at Dt.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\core\engines\client\ClientEngine.ts:472:22)
+        at Object.singleLoader (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:112:26)
+        at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:140:14)
+        at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+      cause: {
+        originalCode: '42703',
+        originalMessage: 'column users.name does not exist',
+        kind: 'ColumnNotFound',
+        column: undefined
+      }
+    }
+  },
+  clientVersion: '7.2.0'
+}
+FAIL test/users.e2e-spec.ts
+  ÔùÅ UsersController (e2e) ÔÇ║ /users (GET)
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      23 |     return request(app.getHttpServer())
+      24 |       .get('/users')
+    > 25 |       .expect(200);
+         |        ^
+      26 |   });
+      27 | });
+      28 |
+
+      at Object.<anonymous> (test/users.e2e-spec.ts:25:8)
+      ----
+      at Test._assertStatus (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:309:14)
+      at node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:152:11)
+
+[Nest] 36808  - 21/12/2025, 1:16:03 a.m.   ERROR [ExceptionsHandler] PrismaClientKnownRequestError: 
+Invalid `this.prisma.refresh_tokens.findMany()` invocation in
+C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\refresh-tokens\refresh-tokens.service.ts:17:39
+
+  14 }
+  15 
+  16 findAll() {
+ÔåÆ 17   return this.prisma.refresh_tokens.findMany(
+The table `public.refresh_tokens` does not exist in the current database.
+    at qr.handleRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at qr.handleAndLogRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+  code: 'P2021',
+  meta: {
+    modelName: 'refresh_tokens',
+    driverAdapterError: DriverAdapterError: TableDoesNotExist
+        at PrismaPgAdapter.onError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:693:11)
+        at PrismaPgAdapter.performIO (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:688:12)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+        at PrismaPgAdapter.queryRaw (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:608:30)
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\tracing.ts:68:22
+        at fr (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\tracing.ts:56:10)
+        at e.interpretNode (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:190:26)
+        at e.interpretNode (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:276:41)
+        at e.run (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:96:23)
+        at execute (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\core\engines\client\LocalExecutor.ts:81:12)
+        at Dt.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\core\engines\client\ClientEngine.ts:472:22)
+        at Object.singleLoader (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:112:26)
+        at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:140:14)
+        at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+      cause: {
+        originalCode: '42P01',
+        originalMessage: 'relation "public.refresh_tokens" does not exist',
+        kind: 'TableDoesNotExist',
+        table: 'public.refresh_tokens'
+      }
+    }
+  },
+  clientVersion: '7.2.0'
+}
+FAIL test/refresh-tokens.e2e-spec.ts
+  ÔùÅ RefreshTokensController (e2e) ÔÇ║ /refresh-tokens (GET)
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      23 |     return request(app.getHttpServer())
+      24 |       .get('/refresh-tokens')
+    > 25 |       .expect(200);
+         |        ^
+      26 |   });
+      27 | });
+      28 |
+
+      at Object.<anonymous> (test/refresh-tokens.e2e-spec.ts:25:8)
+      ----
+      at Test._assertStatus (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:309:14)
+      at node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:152:11)
+
+[Nest] 36808  - 21/12/2025, 1:16:03 a.m.   ERROR [ExceptionsHandler] PrismaClientKnownRequestError: 
+Invalid `this.prisma.professional_clients.findMany()` invocation in
+C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\professional-clients\professional-clients.service.ts:17:45
+
+  14 }
+  15 
+  16 findAll() {
+ÔåÆ 17   return this.prisma.professional_clients.findMany(
+The column `(not available)` does not exist in the current database.
+    at qr.handleRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at qr.handleAndLogRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+  code: 'P2022',
+  meta: {
+    modelName: 'professional_clients',
+    driverAdapterError: DriverAdapterError: ColumnNotFound
+        at PrismaPgAdapter.onError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:693:11)
+        at PrismaPgAdapter.performIO (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:688:12)
+        at processTicksAndRejections (node:internal/process/task_queues:105:5)
+        at PrismaPgAdapter.queryRaw (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+adapter-pg@7.1.0\node_modules\@prisma\adapter-pg\dist\index.js:608:30)
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\tracing.ts:68:22
+        at fr (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\tracing.ts:56:10)
+        at e.interpretNode (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:190:26)
+        at e.interpretNode (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:276:41)
+        at e.run (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client-engine-runtime\src\interpreter\query-interpreter.ts:96:23)
+        at execute (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\core\engines\client\LocalExecutor.ts:81:12)
+        at Dt.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\core\engines\client\ClientEngine.ts:472:22)
+        at Object.singleLoader (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:112:26)
+        at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:140:14)
+        at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+        at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+      cause: {
+        originalCode: '42703',
+        originalMessage: 'column professional_clients.start_date does not exist',
+        kind: 'ColumnNotFound',
+        column: undefined
+      }
+    }
+  },
+  clientVersion: '7.2.0'
+}
+FAIL test/professional-clients.e2e-spec.ts
+  ÔùÅ ProfessionalClientsController (e2e) ÔÇ║ /professional-clients (GET)
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      23 |     return request(app.getHttpServer())
+      24 |       .get('/professional-clients')
+    > 25 |       .expect(200);
+         |        ^
+      26 |   });
+      27 | });
+      28 |
+
+      at Object.<anonymous> (test/professional-clients.e2e-spec.ts:25:8)
+      ----
+      at Test._assertStatus (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:309:14)
+      at node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:152:11)
+
+PASS test/subscriptions.e2e-spec.ts
+PASS test/professional-profiles.e2e-spec.ts
+PASS test/foods.e2e-spec.ts
+PASS test/plans.e2e-spec.ts
+PASS test/serving-units.e2e-spec.ts
+PASS test/appointments.e2e-spec.ts
+PASS test/food-logs.e2e-spec.ts
+PASS test/app.e2e-spec.ts
+PASS test/food-categories.e2e-spec.ts
+PASS test/client-metrics.e2e-spec.ts
+PASS test/data-sources.e2e-spec.ts
+PASS test/exchange-systems.e2e-spec.ts
+PASS test/availability-slots.e2e-spec.ts
+PASS test/exchange-groups.e2e-spec.ts
+PASS test/daily-targets.e2e-spec.ts
+
+Test Suites: 3 failed, 15 passed, 18 total
+Tests:       3 failed, 15 passed, 18 total
+Snapshots:   0 total
+Time:        10.673 s, estimated 13 s
+Ran all test suites.
+Jest did not exit one second after the test run has completed.
+
+'This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

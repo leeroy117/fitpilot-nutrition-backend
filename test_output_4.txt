@@ -1,0 +1,17 @@
+
+> fitpilot-nutrition-backend@0.0.1 test:e2e C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend
+> env-cmd -f .env.test jest --config ./test/jest-e2e.json "--" "test/biometric-logs.e2e-spec.ts" "--no-cache" "--runInBand"
+
+PASS test/biometric-logs.e2e-spec.ts (22.893 s)
+  BiometricLogsController (e2e)
+    ÔêÜ /biometric-logs (POST) should create a log (889 ms)
+    ÔêÜ /biometric-logs (GET) should list logs (33 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        23.256 s
+Ran all test suites matching /test\\biometric-logs.e2e-spec.ts|--no-cache|--runInBand/i.
+Jest did not exit one second after the test run has completed.
+
+'This usually means that there are asynchronous operations that weren't stopped in your tests. Consider running Jest with `--detectOpenHandles` to troubleshoot this issue.
