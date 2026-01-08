@@ -5,7 +5,7 @@ import { UpdateAvailabilitySlotsDto } from './dto/update-availability-slots.dto'
 
 @Controller('availability-slots')
 export class AvailabilitySlotsController {
-  constructor(private readonly availabilitySlotsService: AvailabilitySlotsService) {}
+  constructor(private readonly availabilitySlotsService: AvailabilitySlotsService) { }
 
   @Post()
   create(@Body() createAvailabilitySlotsDto: CreateAvailabilitySlotsDto) {
@@ -15,6 +15,11 @@ export class AvailabilitySlotsController {
   @Get()
   findAll() {
     return this.availabilitySlotsService.findAll();
+  }
+
+  @Get('professional/:professionalId')
+  findByProfessionalId(@Param('professionalId', ParseIntPipe) professionalId: number) {
+    return this.availabilitySlotsService.findByProfessionalId(professionalId);
   }
 
   @Get(':id')

@@ -32,13 +32,14 @@ model data_sources {
 }
 
 model exchange_groups {
-  id               Int               @id @default(autoincrement())
-  system_id        Int?
-  name             String            @db.VarChar(100)
-  avg_calories     Int?
-  color_code       String?           @db.VarChar(7)
-  exchange_systems exchange_systems? @relation(fields: [system_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  foods            foods[]
+  id                  Int                   @id @default(autoincrement())
+  system_id           Int?
+  name                String                @db.VarChar(100)
+  avg_calories        Int?
+  color_code          String?               @db.VarChar(7)
+  exchange_systems    exchange_systems?     @relation(fields: [system_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  foods               foods[]
+  meal_plan_exchanges meal_plan_exchanges[]
 
   @@schema("nutrition")
 }
@@ -79,7 +80,7 @@ model food_logs {
 
 model foods {
   id                Int              @id @default(autoincrement())
-  name              String           @db.VarChar(255)
+  name              String           @unique(map: "idx_unique_name") @db.VarChar(255)
   brand             String?          @db.VarChar(100)
   category_id       Int?
   data_source_id    Int?
@@ -125,15 +126,16 @@ model plans {
 }
 
 model professional_clients {
-  id                                                Int               @id @default(autoincrement())
-  professional_id                                   Int
-  client_id                                         Int
-  service_type                                      service_type_enum
-  start_date                                        DateTime?         @default(dbgenerated("CURRENT_DATE")) @db.Date
-  end_date                                          DateTime?         @db.Date
-  is_active                                         Boolean?          @default(true)
-  users_professional_clients_client_idTousers       users             @relation("professional_clients_client_idTousers", fields: [client_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
-  users_professional_clients_professional_idTousers users             @relation("professional_clients_professional_idTousers", fields: [professional_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  id              Int               @id @default(autoincrement())
+  professional_id Int
+  client_id       Int
+  service_type    service_type_enum
+  start_date      DateTime?         @default(dbgenerated("CURRENT_DATE")) @db.Date
+  end_date        DateTime?         @db.Date
+  is_active       Boolean?          @default(true)
+  deleted_at      DateTime?         @db.Timestamptz(6)
+  client          users             @relation("professional_clients_client_idTousers", fields: [client_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  professional    users             @relation("professional_clients_professional_idTousers", fields: [professional_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
   @@unique([professional_id, client_id, service_type])
   @@index([client_id], map: "idx_prof_clients_client")
@@ -161,39 +163,47 @@ model subscriptions {
   start_date DateTime? @default(now()) @db.Timestamp(6)
   end_date   DateTime  @db.Timestamp(6)
   auto_renew Boolean?  @default(true)
+  deleted_at DateTime? @db.Timestamptz(6)
   plans      plans     @relation(fields: [plan_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
 
   @@schema("public")
 }
 
 model users {
-  id                                                               Int                      @id @default(autoincrement())
-  name                                                             String                   @db.VarChar(100)
-  email                                                            String                   @unique @db.VarChar(150)
-  password                                                         String                   @db.VarChar(255)
-  created_at                                                       DateTime?                @default(now()) @db.Timestamptz(6)
-  updated_at                                                       DateTime?                @default(now()) @db.Timestamptz(6)
-  is_active                                                        Boolean?                 @default(true)
+  id                                                               Int                       @id @default(autoincrement())
+  name                                                             String                    @db.VarChar(100)
+  email                                                            String                    @unique @db.VarChar(150)
+  password                                                         String                    @db.VarChar(255)
+  created_at                                                       DateTime?                 @default(now()) @db.Timestamptz(6)
+  updated_at                                                       DateTime?                 @default(now()) @db.Timestamptz(6)
+  is_active                                                        Boolean?                  @default(true)
   role                                                             user_role_enum?
-  professional_clients_professional_clients_client_idTousers       professional_clients[]   @relation("professional_clients_client_idTousers")
-  professional_clients_professional_clients_professional_idTousers professional_clients[]   @relation("professional_clients_professional_idTousers")
+  phone_number                                                     String?                   @db.VarChar(15)
+  profile_picture                                                  String?                   @db.VarChar(500)
+  deleted_at                                                       DateTime?                 @db.Timestamptz(6)
+  professional_clients_professional_clients_client_idTousers       professional_clients[]    @relation("professional_clients_client_idTousers")
+  professional_clients_professional_clients_professional_idTousers professional_clients[]    @relation("professional_clients_professional_idTousers")
   refresh_tokens                                                   refresh_tokens[]
-  user_professional_roles                                          user_professional_roles?
+  user_professional_roles                                          user_professional_roles[]
 
   @@index([email], map: "idx_users_email")
   @@schema("public")
 }
 
 model appointments {
-  id               Int      @id @default(autoincrement())
-  professional_id  Int
-  client_id        Int
-  scheduled_at     DateTime @db.Timestamp(6)
-  duration_minutes Int?     @default(60)
-  status           String?  @default("scheduled") @db.VarChar(20)
-  title            String?  @db.VarChar(150)
-  meeting_link     String?
-  notes            String?
+  id                 Int       @id @default(autoincrement())
+  professional_id    Int
+  client_id          Int
+  scheduled_at       DateTime  @db.Timestamp(6)
+  duration_minutes   Int?      @default(60)
+  status             String?   @default("scheduled") @db.VarChar(20)
+  title              String?   @db.VarChar(150)
+  meeting_link       String?
+  notes              String?
+  deleted_at         DateTime? @db.Timestamptz(6)
+  start_date         DateTime? @db.Timestamp(6)
+  end_date           DateTime? @db.Timestamp(6)
+  effective_duration Int?
 
   @@schema("public")
 }
@@ -205,6 +215,7 @@ model availability_slots {
   start_time      DateTime? @db.Time(6)
   end_time        DateTime? @db.Time(6)
   is_active       Boolean?  @default(true)
+  deleted_at      DateTime? @db.Timestamptz(6)
 
   @@schema("public")
 }
@@ -254,11 +265,54 @@ model refresh_tokens {
 }
 
 model user_professional_roles {
-  user_id Int                     @id
-  role    professional_role_enum?
-  users   users                   @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  user_id Int
+  role    professional_role_enum
+  users   users                  @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
+  @@id([user_id, role])
+  @@unique([user_id, role], map: "idx_unique_userid_role")
   @@schema("public")
+}
+
+/// This table contains check constraints and requires additional setup for migrations. Visit https://pris.ly/d/check-constraints for more info.
+model meal_plan_exchanges {
+  id                Int             @id @default(autoincrement())
+  meal_plan_meal_id Int
+  exchange_group_id Int
+  quantity          Int
+  updated_at        DateTime?       @default(now()) @db.Timestamp(6)
+  deleted_at        DateTime?       @db.Timestamp(6)
+  exchange_groups   exchange_groups @relation(fields: [exchange_group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  meal_plan_meals   meal_plan_meals @relation(fields: [meal_plan_meal_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@schema("nutrition")
+}
+
+model meal_plan_meals {
+  id                  Int                   @id @default(autoincrement())
+  meal_plan_id        Int
+  meal_name           String                @db.VarChar(50)
+  sort_order          Int
+  updated_at          DateTime?             @default(now()) @db.Timestamp(6)
+  deleted_at          DateTime?             @db.Timestamp(6)
+  meal_plan_exchanges meal_plan_exchanges[]
+  meal_plans          meal_plans            @relation(fields: [meal_plan_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@schema("nutrition")
+}
+
+model meal_plans {
+  id              Int               @id @default(autoincrement())
+  name            String            @db.VarChar(100)
+  description     String?
+  created_by      Int?
+  is_template     Boolean?          @default(false)
+  created_at      DateTime?         @default(now()) @db.Timestamp(6)
+  updated_at      DateTime?         @default(now()) @db.Timestamp(6)
+  deleted_at      DateTime?         @db.Timestamp(6)
+  meal_plan_meals meal_plan_meals[]
+
+  @@schema("nutrition")
 }
 
 enum service_type_enum {
@@ -302,6 +356,16 @@ enum professional_role_enum {
 enum professional_role_enum_old {
   NUTRICIONIST
   TRAINER
+
+  @@schema("public")
+}
+
+enum appointmentstatus {
+  scheduled
+  confirmed
+  completed
+  cancelled
+  no_show
 
   @@schema("public")
 }

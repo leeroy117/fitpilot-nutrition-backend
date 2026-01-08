@@ -19,14 +19,15 @@ import { FoodsModule } from './foods/foods.module';
 import { ServingUnitsModule } from './serving-units/serving-units.module';
 import { AppointmentsModule } from './appointments/appointments.module';
 import { AvailabilitySlotsModule } from './availability-slots/availability-slots.module';
+import { MealPlansModule } from './meal-plans/meal-plans.module';
 
 import { AuthModule } from './auth/auth.module';
 
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-imports: [ConfigModule.forRoot({ isGlobal: true }), AuthModule, PrismaModule, UsersModule, ProfessionalProfilesModule, ProfessionalClientsModule, PlansModule, SubscriptionsModule, ClientMetricsModule, RefreshTokensModule, DailyTargetsModule, DataSourcesModule, ExchangeGroupsModule, ExchangeSystemsModule, FoodCategoriesModule, FoodLogsModule, FoodsModule, ServingUnitsModule, AppointmentsModule, AvailabilitySlotsModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), AuthModule, PrismaModule, UsersModule, ProfessionalProfilesModule, ProfessionalClientsModule, PlansModule, SubscriptionsModule, ClientMetricsModule, RefreshTokensModule, DailyTargetsModule, DataSourcesModule, ExchangeGroupsModule, ExchangeSystemsModule, FoodCategoriesModule, FoodLogsModule, FoodsModule, ServingUnitsModule, AppointmentsModule, AvailabilitySlotsModule, MealPlansModule],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule {}
+export class AppModule { }

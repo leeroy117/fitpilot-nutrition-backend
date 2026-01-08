@@ -22,4 +22,8 @@ export class CreateProfessionalClientDto {
   @IsOptional()
   @IsBoolean()
   is_active?: boolean;
+
+  @IsOptional()
+  @IsDateString()
+  deleted_at?: string;
 }

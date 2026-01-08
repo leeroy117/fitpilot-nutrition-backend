@@ -1,4 +1,4 @@
-import { IsBoolean, IsEmail, IsNotEmpty, IsOptional, IsString, IsEnum, MaxLength } from 'class-validator';
+import { IsBoolean, IsEmail, IsNotEmpty, IsOptional, IsString, IsEnum, MaxLength, IsDateString } from 'class-validator';
 import { user_role_enum } from '@generated/prisma/enums';
 
 export class CreateUserDto {
@@ -24,4 +24,8 @@ export class CreateUserDto {
   @IsBoolean()
   @IsOptional()
   is_active?: boolean;
+
+  @IsOptional()
+  @IsDateString()
+  deleted_at?: string;
 }

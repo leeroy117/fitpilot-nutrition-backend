@@ -1,4 +1,4 @@
-import { IsBoolean, IsDateString, IsInt, IsOptional } from 'class-validator';
+import { IsBoolean, IsDateString, IsInt, IsOptional, Matches } from 'class-validator';
 
 export class CreateAvailabilitySlotsDto {
   @IsInt()
@@ -8,12 +8,16 @@ export class CreateAvailabilitySlotsDto {
   @IsOptional()
   day_of_week?: number;
 
-  @IsDateString()
-  @IsOptional()
+
+  @Matches(/^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/, {
+    message: 'startTime must be in HH:MM:SS format',
+  })
   start_time?: string;
 
-  @IsDateString()
-  @IsOptional()
+
+  @Matches(/^([01]\d|2[0-3]):([0-5]\d):([0-5]\d)$/, {
+    message: 'endTime must be in HH:MM:SS format',
+  })
   end_time?: string;
 
   @IsBoolean()

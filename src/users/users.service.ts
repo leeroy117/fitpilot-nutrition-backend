@@ -5,7 +5,7 @@ import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class UsersService {
-  constructor(private readonly prisma: PrismaService) {}
+  constructor(private readonly prisma: PrismaService) { }
 
   create(createUserDto: CreateUserDto) {
     return this.prisma.users.create({
@@ -14,18 +14,32 @@ export class UsersService {
   }
 
   findAll() {
-    return this.prisma.users.findMany();
+    return this.prisma.users.findMany({
+      where: { deleted_at: null },
+    });
   }
 
   findOne(id: number) {
     return this.prisma.users.findUnique({
-      where: { id },
+      where: { id, deleted_at: null },
+      include: {
+        user_professional_roles: true,
+        professional_clients_professional_clients_professional_idTousers: {
+          where: { deleted_at: null },
+        },
+      },
     });
   }
 
   findByEmail(email: string) {
     return this.prisma.users.findFirst({
-      where: { email },
+      where: { email, deleted_at: null },
+      include: {
+        user_professional_roles: true,
+        professional_clients_professional_clients_professional_idTousers: {
+          where: { deleted_at: null },
+        },
+      },
     });
   }
 
@@ -37,8 +51,9 @@ export class UsersService {
   }
 
   remove(id: number) {
-    return this.prisma.users.delete({
+    return this.prisma.users.update({
       where: { id },
+      data: { deleted_at: new Date() },
     });
   }
 }

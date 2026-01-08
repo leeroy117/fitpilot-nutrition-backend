@@ -5,7 +5,7 @@ import { UpdateProfessionalClientDto } from './dto/update-professional-client.dt
 
 @Controller('professional-clients')
 export class ProfessionalClientsController {
-  constructor(private readonly professionalClientsService: ProfessionalClientsService) {}
+  constructor(private readonly professionalClientsService: ProfessionalClientsService) { }
 
   @Post()
   create(@Body() createProfessionalClientDto: CreateProfessionalClientDto) {
@@ -20,6 +20,11 @@ export class ProfessionalClientsController {
   @Get(':id')
   findOne(@Param('id') id: string) {
     return this.professionalClientsService.findOne(+id);
+  }
+
+  @Get('professional/:professional_id')
+  findOneByProfessionalId(@Param('professional_id') professional_id: string) {
+    return this.professionalClientsService.findOneByProfessionalId(+professional_id);
   }
 
   @Patch(':id')

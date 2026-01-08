@@ -23,4 +23,8 @@ export class CreateSubscriptionDto {
   @IsOptional()
   @IsBoolean()
   auto_renew?: boolean;
+
+  @IsOptional()
+  @IsDateString()
+  deleted_at?: string;
 }

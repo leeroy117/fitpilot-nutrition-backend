@@ -1,0 +1,48 @@
+--- Testing Auth Flow for testuser1767388891117@example.com ---
+
+1. Testing Signup...
+Signup Successful: Token Received
+
+2. Testing Login...
+Login Successful: Token Received
+Token Payload (Initial): {
+  sub: 17,
+  email: 'testuser1767388891117@example.com',
+  role: null,
+  professional_role: null,
+  iat: 1767388891,
+  exp: 1767389791
+}
+
+2.1. Updating User Role for ID 17...
+Role Update Successful
+
+2.2. Re-Logging in...
+Token Payload (After Role Update): {
+  sub: 17,
+  email: 'testuser1767388891117@example.com',
+  role: 'CLIENT',
+  professional_role: null,
+  iat: 1767388892,
+  exp: 1767389792
+}
+
+2.3. Testing Professional Client Roles...
+Created Client ID: 18
+Professional Client Relationship Created
+Token Payload (After Prof Client Add): {
+  sub: 17,
+  email: 'testuser1767388891117@example.com',
+  role: 'PROFESSIONAL',
+  professional_role: null,
+  iat: 1767388893,
+  exp: 1767389793
+}
+
+3. Testing Protected Route (Profile)...
+Profile Access Successful: true
+
+4. Testing Refresh Token...
+Refresh Successful: New Token Received
+
+--- Auth Verification Complete: SUCCESS ---

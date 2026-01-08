@@ -34,7 +34,35 @@ export class AuthService {
   }
 
   async generateTokens(user: any) {
-    const payload = { sub: user.id, email: user.email, role: user.role };
+    const professionalRoles = new Set<string>();
+
+    // 1. Add professional roles from user_professional_roles
+    if (user.user_professional_roles) {
+      user.user_professional_roles.forEach((userRole: any) => {
+        if (userRole.role) {
+          professionalRoles.add(userRole.role);
+        }
+      });
+    }
+
+    // 2. Derive roles from professional_clients
+    if (user.professional_clients_professional_clients_professional_idTousers) {
+      user.professional_clients_professional_clients_professional_idTousers.forEach((client: any) => {
+        if (client.service_type === 'NUTRITION' || client.service_type === 'BOTH') {
+          professionalRoles.add('NUTRITIONIST'); // Mapping NUTRITION -> NUTRITIONIST
+        }
+        if (client.service_type === 'TRAINING' || client.service_type === 'BOTH') {
+          professionalRoles.add('TRAINER');
+        }
+      });
+    }
+
+    const payload = {
+      sub: user.id,
+      email: user.email,
+      role: user.role,
+      professional_role: Array.from(professionalRoles), // Kept key as professional_role but it is an array
+    };
     const accessToken = this.jwtService.sign(payload, {
       secret: jwtConstants.secret,
       expiresIn: jwtConstants.expiresIn as any,
