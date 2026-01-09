@@ -5,7 +5,7 @@ import { UpdateFoodsDto } from './dto/update-foods.dto';
 
 @Controller('foods')
 export class FoodsController {
-  constructor(private readonly service: FoodsService) {}
+  constructor(private readonly service: FoodsService) { }
 
   @Post()
   create(@Body() createDto: CreateFoodsDto) {
@@ -30,5 +30,10 @@ export class FoodsController {
   @Delete(':id')
   remove(@Param('id', ParseIntPipe) id: number) {
     return this.service.remove(id);
+  }
+
+  @Get('exchange-group/:id')
+  findByExchangeGroup(@Param('id', ParseIntPipe) id: number) {
+    return this.service.findByExchangeGroup(id);
   }
 }

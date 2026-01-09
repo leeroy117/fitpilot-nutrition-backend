@@ -10,7 +10,7 @@ export class CreateExchangeGroupsDto {
 
   @IsOptional()
   @IsInt()
-  avg_energy_kcal?: number;
+  avg_calories?: number;
 
   @IsOptional()
   @IsString()

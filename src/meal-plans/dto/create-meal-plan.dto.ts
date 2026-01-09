@@ -26,7 +26,7 @@ export class CreateMealPlanMealDto {
     @IsArray()
     @ValidateNested({ each: true })
     @Type(() => CreateMealPlanExchangeDto)
-    exchanges: CreateMealPlanExchangeDto[];
+    meal_plan_exchanges: CreateMealPlanExchangeDto[];
 }
 
 export class CreateMealPlanDto {
@@ -54,5 +54,5 @@ export class CreateMealPlanDto {
     @IsArray()
     @ValidateNested({ each: true })
     @Type(() => CreateMealPlanMealDto)
-    meals: CreateMealPlanMealDto[];
+    meal_plan_meals: CreateMealPlanMealDto[];
 }

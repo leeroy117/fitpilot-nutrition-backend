@@ -5,7 +5,7 @@ import { UpdateMealPlanDto } from './dto/update-meal-plan.dto';
 import { ApiTags, ApiOperation, ApiQuery } from '@nestjs/swagger';
 
 @ApiTags('Meal Plans')
-@Controller('v1/meal-plans')
+@Controller('meal-plans')
 export class MealPlansController {
     constructor(private readonly mealPlansService: MealPlansService) { }
 

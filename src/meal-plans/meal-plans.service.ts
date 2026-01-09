@@ -8,17 +8,17 @@ export class MealPlansService {
     constructor(private readonly prisma: PrismaService) { }
 
     async create(createDto: CreateMealPlanDto) {
-        const { meals, ...planData } = createDto;
+        const { meal_plan_meals, ...planData } = createDto;
 
         return this.prisma.meal_plans.create({
             data: {
                 ...planData,
                 meal_plan_meals: {
-                    create: meals.map((meal) => ({
+                    create: meal_plan_meals.map((meal) => ({
                         meal_name: meal.meal_name,
                         sort_order: meal.sort_order,
                         meal_plan_exchanges: {
-                            create: meal.exchanges.map((exchange) => ({
+                            create: meal.meal_plan_exchanges.map((exchange) => ({
                                 exchange_group_id: exchange.exchange_group_id,
                                 quantity: exchange.quantity,
                             })),
@@ -90,7 +90,7 @@ export class MealPlansService {
     }
 
     async update(id: number, updateDto: UpdateMealPlanDto) {
-        const { meals, ...planData } = updateDto;
+        const { meal_plan_meals, ...planData } = updateDto;
 
         // Verify existence
         await this.findOne(id);
@@ -105,7 +105,7 @@ export class MealPlansService {
             }
 
             // 2. Handle meals if provided
-            if (meals) {
+            if (meal_plan_meals) {
                 // For simplicity in this implementation, we'll replace the meals
                 // In a production environment, you might want to perform fine-grained diff updates
 
@@ -115,14 +115,14 @@ export class MealPlansService {
                 });
 
                 // Re-create meals and exchanges
-                for (const meal of meals) {
+                for (const meal of meal_plan_meals) {
                     await tx.meal_plan_meals.create({
                         data: {
                             meal_plan_id: id,
                             meal_name: meal.meal_name,
                             sort_order: meal.sort_order,
                             meal_plan_exchanges: {
-                                create: meal.exchanges.map((ex) => ({
+                                create: meal.meal_plan_exchanges.map((ex) => ({
                                     exchange_group_id: ex.exchange_group_id,
                                     quantity: ex.quantity,
                                 })),

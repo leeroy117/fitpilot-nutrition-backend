@@ -9,10 +9,6 @@ export class CreateFoodsDto {
   brand?: string;
 
   @IsOptional()
-  @IsString()
-  barcode?: string;
-
-  @IsOptional()
   @IsInt()
   category_id?: number;
 
@@ -29,14 +25,6 @@ export class CreateFoodsDto {
   is_recipe?: boolean;
 
   @IsOptional()
-  @IsInt()
-  glycemic_index?: number;
-
-  @IsOptional()
-  @IsNumber()
-  glycemic_load_per_100g?: number;
-
-  @IsOptional()
   @IsNumber()
   base_serving_size?: number;
 
@@ -44,4 +32,19 @@ export class CreateFoodsDto {
   @IsString()
   base_unit?: string;
 
+  @IsOptional()
+  @IsNumber()
+  calories_kcal?: number;
+
+  @IsOptional()
+  @IsNumber()
+  protein_g?: number;
+
+  @IsOptional()
+  @IsNumber()
+  carbs_g?: number;
+
+  @IsOptional()
+  @IsNumber()
+  fat_g?: number;
 }
