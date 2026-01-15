@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe } from '@nestjs/common';
+import { Controller, Get, Post, Body, Patch, Param, Delete, ParseIntPipe, Query } from '@nestjs/common';
 import { FoodsService } from './foods.service';
 import { CreateFoodsDto } from './dto/create-foods.dto';
 import { UpdateFoodsDto } from './dto/update-foods.dto';
@@ -13,13 +13,18 @@ export class FoodsController {
   }
 
   @Get()
-  findAll() {
-    return this.service.findAll();
+  findAll(@Query('professionalId') professionalId?: string) {
+    const profId = professionalId ? parseInt(professionalId, 10) : undefined;
+    return this.service.findAll(profId);
   }
 
   @Get(':id')
-  findOne(@Param('id', ParseIntPipe) id: number) {
-    return this.service.findOne(id);
+  findOne(
+    @Param('id', ParseIntPipe) id: number,
+    @Query('professionalId') professionalId?: string,
+  ) {
+    const profId = professionalId ? parseInt(professionalId, 10) : undefined;
+    return this.service.findOne(id, profId);
   }
 
   @Patch(':id')
@@ -33,7 +38,11 @@ export class FoodsController {
   }
 
   @Get('exchange-group/:id')
-  findByExchangeGroup(@Param('id', ParseIntPipe) id: number) {
-    return this.service.findByExchangeGroup(id);
+  findByExchangeGroup(
+    @Param('id', ParseIntPipe) id: number,
+    @Query('professionalId') professionalId?: string,
+  ) {
+    const profId = professionalId ? parseInt(professionalId, 10) : undefined;
+    return this.service.findByExchangeGroup(id, profId);
   }
 }

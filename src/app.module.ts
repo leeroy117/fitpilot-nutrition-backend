@@ -22,13 +22,18 @@ import { AppointmentsModule } from './appointments/appointments.module';
 import { AvailabilitySlotsModule } from './availability-slots/availability-slots.module';
 import { MealPlansModule } from './meal-plans/meal-plans.module';
 import { RecipesModule } from './recipes/recipes.module';
+import { MenusModule } from './menus/menus.module';
+import { ProfessionalSettingsModule } from './professional-settings/professional-settings.module';
+import { RecipeFoodsModule } from './recipe-foods/recipe-foods.module';
+import { MicronutrientsModule } from './micronutrients/micronutrients.module';
+
 
 import { AuthModule } from './auth/auth.module';
 
 import { ConfigModule } from '@nestjs/config';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true }), AuthModule, PrismaModule, UsersModule, ProfessionalProfilesModule, ProfessionalClientsModule, PlansModule, SubscriptionsModule, ClientMetricsModule, RefreshTokensModule, DailyTargetsModule, DataSourcesModule, ExchangeGroupsModule, ExchangeSystemsModule, FoodCategoriesModule, FoodLogsModule, FoodsModule, ServingUnitsModule, AppointmentsModule, AvailabilitySlotsModule, MealPlansModule, RecipesModule, FoodNutritionValuesModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), AuthModule, PrismaModule, UsersModule, ProfessionalProfilesModule, ProfessionalClientsModule, PlansModule, SubscriptionsModule, ClientMetricsModule, RefreshTokensModule, DailyTargetsModule, DataSourcesModule, ExchangeGroupsModule, ExchangeSystemsModule, FoodCategoriesModule, FoodLogsModule, FoodsModule, ServingUnitsModule, AppointmentsModule, AvailabilitySlotsModule, MealPlansModule, RecipesModule, FoodNutritionValuesModule, MenusModule, ProfessionalSettingsModule, RecipeFoodsModule, MicronutrientsModule],
   controllers: [AppController],
   providers: [AppService],
 })

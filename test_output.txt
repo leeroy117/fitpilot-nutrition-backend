@@ -1,28 +1,58 @@
 
 > fitpilot-nutrition-backend@0.0.1 test:e2e C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend
-> env-cmd -f .env.test jest --config ./test/jest-e2e.json --runInBand "test/daily-targets.e2e-spec.ts"
+> env-cmd -f .env.test jest --config ./test/jest-e2e.json --runInBand "--" "test/foods.e2e-spec.ts"
 
-FAIL test/daily-targets.e2e-spec.ts
-  DailyTargetsController (e2e)
-    ├ù /daily-targets (GET) (261 ms)
+[Nest] 7688  - 09/01/2026, 8:31:17 p.m.   ERROR [ExceptionsHandler] PrismaClientKnownRequestError: 
+Invalid `this.prisma.foods.findMany()` invocation in
+C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\foods\foods.service.ts:44:43
 
-  ÔùÅ DailyTargetsController (e2e) ÔÇ║ /daily-targets (GET)
+  41 async findAll(professionalId?: number) {
+  42   const dataSourceId = await this.getPreferredDataSourceId(professionalId);
+  43 
+ÔåÆ 44   const foods = await this.prisma.foods.findMany(
 
-    TypeError: request is not a function
+    at qr.handleRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at qr.handleAndLogRequestError (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at qr.request (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at a (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@prisma+client@7.1.0_prisma_564b687db4fb265c2a6807a600916bfc\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:805:24)
+    at FoodsService.findAll (C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\src\foods\foods.service.ts:44:19)
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-execution-context.js:46:28
+    at C:\Users\Leero\OneDrive\Escritorio\dev_projects\fitpilot\fitpilot-nutrition-backend\node_modules\.pnpm\@nestjs+core@11.1.9_@nestjs_35aa21069415c61cc2ff03470cea104c\node_modules\@nestjs\core\router\router-proxy.js:9:17 {
+  code: 'ECONNREFUSED',
+  meta: {
+    modelName: 'foods'
+  },
+  clientVersion: '7.2.0'
+}
+FAIL test/foods.e2e-spec.ts
+  FoodsController (e2e)
+    ├ù /foods (GET) (374 ms)
 
-      21 |
-      22 |   it('/daily-targets (GET)', () => {
-    > 23 |     return request(app.getHttpServer())
-         |            ^
-      24 |       .get('/daily-targets')
-      25 |       .expect(200);
+  ÔùÅ FoodsController (e2e) ÔÇ║ /foods (GET)
+
+    expected 200 "OK", got 500 "Internal Server Error"
+
+      23 |     return request(app.getHttpServer())
+      24 |       .get('/foods')
+    > 25 |       .expect(200);
+         |        ^
       26 |   });
+      27 | });
+      28 |
 
-      at Object.<anonymous> (test/daily-targets.e2e-spec.ts:23:12)
+      at Object.<anonymous> (test/foods.e2e-spec.ts:25:8)
+      ----
+      at Test._assertStatus (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:309:14)
+      at node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:365:13
+      at Test._assertFunction (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:342:13)
+      at Test.assert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:195:23)
+      at localAssert (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:138:14)
+      at Server.<anonymous> (node_modules/.pnpm/supertest@7.1.4/node_modules/supertest/lib/test.js:152:11)
 
 Test Suites: 1 failed, 1 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.094 s
-Ran all test suites matching /test\\daily-targets.e2e-spec.ts/i.
+Time:        2.423 s, estimated 3 s
+Ran all test suites matching /test\\foods.e2e-spec.ts/i.
 ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

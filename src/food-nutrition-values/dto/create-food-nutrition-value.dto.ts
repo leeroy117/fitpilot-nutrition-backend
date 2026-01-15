@@ -42,4 +42,16 @@ export class CreateFoodNutritionValueDto {
     @IsOptional()
     @IsString()
     notes?: string;
+
+    @IsOptional()
+    @IsDecimal()
+    fiber_g?: number;
+
+    @IsOptional()
+    @IsDecimal()
+    glycemic_index?: number;
+
+    @IsOptional()
+    @IsDecimal()
+    glycemic_load?: number;
 }

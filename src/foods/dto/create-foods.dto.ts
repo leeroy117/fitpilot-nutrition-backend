@@ -14,10 +14,6 @@ export class CreateFoodsDto {
 
   @IsOptional()
   @IsInt()
-  data_source_id?: number;
-
-  @IsOptional()
-  @IsInt()
   exchange_group_id?: number;
 
   @IsOptional()
@@ -47,4 +43,16 @@ export class CreateFoodsDto {
   @IsOptional()
   @IsNumber()
   fat_g?: number;
+
+  @IsOptional()
+  @IsNumber()
+  fiber_g?: number;
+
+  @IsOptional()
+  @IsNumber()
+  glycemic_index?: number;
+
+  @IsOptional()
+  @IsNumber()
+  glycemic_load?: number;
 }

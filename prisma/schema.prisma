@@ -27,7 +27,6 @@ model data_sources {
   id                    Int                     @id @default(autoincrement())
   name                  String                  @db.VarChar(100)
   food_nutrition_values food_nutrition_values[]
-  foods                 foods[]
 
   @@schema("nutrition")
 }
@@ -41,16 +40,18 @@ model exchange_groups {
   exchange_systems    exchange_systems?     @relation(fields: [system_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   foods               foods[]
   meal_plan_exchanges meal_plan_exchanges[]
+  menu_items          menu_items[]
   recipe_exchanges    recipe_exchanges[]
 
   @@schema("nutrition")
 }
 
 model exchange_systems {
-  id              Int               @id @default(autoincrement())
-  name            String            @db.VarChar(100)
-  country_code    String?           @db.VarChar(3)
-  exchange_groups exchange_groups[]
+  id                    Int                     @id @default(autoincrement())
+  name                  String                  @db.VarChar(100)
+  country_code          String?                 @db.VarChar(3)
+  exchange_groups       exchange_groups[]
+  professional_settings professional_settings[]
 
   @@schema("nutrition")
 }
@@ -85,7 +86,6 @@ model foods {
   name                  String                  @unique(map: "idx_unique_name") @db.VarChar(255)
   brand                 String?                 @db.VarChar(100)
   category_id           Int?
-  data_source_id        Int?
   exchange_group_id     Int?
   is_recipe             Boolean?                @default(false)
   base_serving_size     Decimal?                @default(100) @db.Decimal(10, 2)
@@ -97,21 +97,24 @@ model foods {
   food_logs             food_logs[]
   food_nutrition_values food_nutrition_values[]
   food_categories       food_categories?        @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  data_sources          data_sources?           @relation(fields: [data_source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
   exchange_groups       exchange_groups?        @relation(fields: [exchange_group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  menu_items            menu_items[]
+  recipe_foods          recipe_foods[]
   serving_units         serving_units[]
 
   @@schema("nutrition")
 }
 
 model serving_units {
-  id               Int         @id @default(autoincrement())
+  id               Int            @id @default(autoincrement())
   food_id          Int?
-  unit_name        String      @db.VarChar(50)
-  gram_equivalent  Decimal     @db.Decimal(10, 2)
-  is_exchange_unit Boolean?    @default(false)
+  unit_name        String         @db.VarChar(50)
+  gram_equivalent  Decimal        @db.Decimal(10, 2)
+  is_exchange_unit Boolean?       @default(false)
   food_logs        food_logs[]
-  foods            foods?      @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  menu_items       menu_items[]
+  recipe_foods     recipe_foods[]
+  foods            foods?         @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
   @@schema("nutrition")
 }
@@ -184,6 +187,7 @@ model users {
   phone_number                                                     String?                   @db.VarChar(15)
   profile_picture                                                  String?                   @db.VarChar(500)
   deleted_at                                                       DateTime?                 @db.Timestamptz(6)
+  menus                                                            menus[]
   professional_clients_professional_clients_client_idTousers       professional_clients[]    @relation("professional_clients_client_idTousers")
   professional_clients_professional_clients_professional_idTousers professional_clients[]    @relation("professional_clients_professional_idTousers")
   refresh_tokens                                                   refresh_tokens[]
@@ -314,26 +318,31 @@ model meal_plans {
   updated_at      DateTime?         @default(now()) @db.Timestamp(6)
   deleted_at      DateTime?         @db.Timestamp(6)
   meal_plan_meals meal_plan_meals[]
+  menus           menus[]
 
   @@schema("nutrition")
 }
 
 model food_nutrition_values {
-  id                Int          @id @default(autoincrement())
-  food_id           Int
-  data_source_id    Int
-  calories_kcal     Decimal?     @db.Decimal(8, 1)
-  protein_g         Decimal?     @db.Decimal(8, 1)
-  carbs_g           Decimal?     @db.Decimal(8, 1)
-  fat_g             Decimal?     @db.Decimal(8, 1)
-  base_serving_size Decimal?     @default(100) @db.Decimal(6, 2)
-  base_unit         String?      @default("g") @db.VarChar(20)
-  state             String?      @default("standard") @db.VarChar(20)
-  notes             String?
-  deleted_at        DateTime?    @db.Timestamptz(6)
-  created_at        DateTime?    @db.Timestamptz(6)
-  data_sources      data_sources @relation(fields: [data_source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
-  foods             foods        @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  id                        Int                         @id @default(autoincrement())
+  food_id                   Int
+  data_source_id            Int
+  calories_kcal             Decimal?                    @db.Decimal(8, 1)
+  protein_g                 Decimal?                    @db.Decimal(8, 1)
+  carbs_g                   Decimal?                    @db.Decimal(8, 1)
+  fat_g                     Decimal?                    @db.Decimal(8, 1)
+  base_serving_size         Decimal?                    @default(100) @db.Decimal(6, 2)
+  base_unit                 String?                     @default("g") @db.VarChar(20)
+  state                     String?                     @default("standard") @db.VarChar(20)
+  notes                     String?
+  deleted_at                DateTime?                   @db.Timestamptz(6)
+  created_at                DateTime?                   @db.Timestamptz(6)
+  fiber_g                   Decimal?                    @db.Decimal(8, 1)
+  glycemic_index            Decimal?                    @db.Decimal(8, 1)
+  glycemic_load             Decimal?                    @db.Decimal(8, 1)
+  food_micronutrient_values food_micronutrient_values[]
+  data_sources              data_sources                @relation(fields: [data_source_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  foods                     foods                       @relation(fields: [food_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
 
   @@unique([food_id, data_source_id, state])
   @@schema("nutrition")
@@ -359,6 +368,100 @@ model recipes {
   created_at       DateTime?          @db.Timestamptz(6)
   deleted_at       DateTime?          @db.Timestamptz(6)
   recipe_exchanges recipe_exchanges[]
+  recipe_foods     recipe_foods[]
+
+  @@schema("nutrition")
+}
+
+model professional_settings {
+  professional_id              Int               @id
+  preferred_exchange_system_id Int?
+  created_at                   DateTime?         @default(now()) @db.Timestamp(6)
+  exchange_systems             exchange_systems? @relation(fields: [preferred_exchange_system_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("nutrition")
+}
+
+model menu_items {
+  id                                             Int              @id @default(autoincrement())
+  menu_meal_id                                   Int?
+  exchange_group_id                              Int?
+  food_id                                        Int?
+  serving_unit_id                                Int?
+  quantity                                       Int?             @default(1)
+  recipe_id                                      Int?
+  exchange_groups                                exchange_groups? @relation(fields: [exchange_group_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  foods                                          foods?           @relation(fields: [food_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  menu_meals_menu_items_menu_meal_idTomenu_meals menu_meals?      @relation("menu_items_menu_meal_idTomenu_meals", fields: [menu_meal_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  menu_meals_menu_items_recipe_idTomenu_meals    menu_meals?      @relation("menu_items_recipe_idTomenu_meals", fields: [recipe_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  serving_units                                  serving_units?   @relation(fields: [serving_unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("nutrition")
+}
+
+model menu_meals {
+  id                                             Int          @id @default(autoincrement())
+  menu_id                                        Int?
+  name                                           String?      @db.VarChar(50)
+  source_meal_plan_meal_id                       Int?
+  menu_items_menu_items_menu_meal_idTomenu_meals menu_items[] @relation("menu_items_menu_meal_idTomenu_meals")
+  menu_items_menu_items_recipe_idTomenu_meals    menu_items[] @relation("menu_items_recipe_idTomenu_meals")
+  menus                                          menus?       @relation(fields: [menu_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+
+  @@schema("nutrition")
+}
+
+model menus {
+  id           Int          @id @default(autoincrement())
+  meal_plan_id Int?
+  client_id    Int?
+  start_date   DateTime?    @db.Date
+  end_date     DateTime?    @db.Date
+  created_at   DateTime?    @default(now()) @db.Timestamp(6)
+  created_by   Int?
+  is_reusable  Boolean?
+  description_ String?      @map("description ") @db.VarChar(255)
+  title        String?      @db.VarChar(150)
+  menu_meals   menu_meals[]
+  meal_plans   meal_plans?  @relation(fields: [meal_plan_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  users        users?       @relation(fields: [created_by], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "menus_user_id_fkey")
+
+  @@schema("nutrition")
+}
+
+model recipe_foods {
+  id              Int            @id @default(autoincrement())
+  recipe_id       Int?
+  food_id         Int?
+  serving_unit_id Int?
+  quantity        Decimal        @db.Decimal(6, 2)
+  foods           foods?         @relation(fields: [food_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+  recipes         recipes?       @relation(fields: [recipe_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+  serving_units   serving_units? @relation(fields: [serving_unit_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+
+  @@schema("nutrition")
+}
+
+model food_micronutrient_values {
+  id                      Int                   @id @default(autoincrement())
+  food_nutrition_value_id Int
+  micronutrient_id        Int
+  amount                  Decimal?              @db.Decimal(8, 2)
+  created_at              DateTime?             @default(now()) @db.Timestamp(6)
+  food_nutrition_values   food_nutrition_values @relation(fields: [food_nutrition_value_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_food_nutrition")
+  micronutrients          micronutrients        @relation(fields: [micronutrient_id], references: [id], onDelete: Cascade, onUpdate: NoAction, map: "fk_micronutrient")
+
+  @@unique([food_nutrition_value_id, micronutrient_id])
+  @@schema("nutrition")
+}
+
+model micronutrients {
+  id                        Int                         @id @default(autoincrement())
+  name                      String                      @db.VarChar(100)
+  unit                      String                      @db.VarChar(20)
+  category                  String?                     @db.VarChar(50)
+  created_at                DateTime?                   @default(now()) @db.Timestamp(6)
+  food_micronutrient_values food_micronutrient_values[]
 
   @@schema("nutrition")
 }
